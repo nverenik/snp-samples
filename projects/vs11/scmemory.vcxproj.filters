@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="sc-memory">
+      <UniqueIdentifier>{c40c6211-6148-4fa9-84e8-ba5e32482ee9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sc-memory\src">
+      <UniqueIdentifier>{b84d8b92-8561-4c71-9316-37a010cffa2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sc-memory\src\sc-store">
+      <UniqueIdentifier>{9905eb40-12e1-4afd-a983-35516622c5c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sc-memory\src\sc-store\sc_storage_snp">
+      <UniqueIdentifier>{b903b84e-1a52-4747-9a1d-b3238b0fb9d6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\tgf2snp\sc-memory\src\sc-store\sc_storage_snp\sc_storage_snp_glue.pure.cpp">
+      <Filter>sc-memory\src\sc-store\sc_storage_snp</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
