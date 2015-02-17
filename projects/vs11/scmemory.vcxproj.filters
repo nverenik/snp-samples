@@ -19,4 +19,15 @@
       <Filter>sc-memory\src\sc-store\sc_storage_snp</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\source\tgf2snp\sc-memory\src\sc-store\sc_storage_snp\sc_storage_snp_config.h">
+      <Filter>sc-memory\src\sc-store\sc_storage_snp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\tgf2snp\sc-memory\src\sc-store\sc_storage_snp\sc_storage_snp_glue.pure.h">
+      <Filter>sc-memory\src\sc-store\sc_storage_snp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\tgf2snp\sc-memory\src\sc-store\sc_storage_snp\sc_storage_snp_types.h">
+      <Filter>sc-memory\src\sc-store\sc_storage_snp</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>

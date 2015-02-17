@@ -10,8 +10,14 @@
 
 #include "sctext.h"
 
+#ifndef ENABLE_HARDWARE_STORAGE
 #define ENABLE_HARDWARE_STORAGE
+#endif //ENABLE_HARDWARE_STORAGE
+
+#ifndef PURE_IMPLEMENTATION
 #define PURE_IMPLEMENTATION
+#endif //PURE_IMPLEMENTATION
+
 #include "sc-memory/src/sc-store/sc_storage_snp/sc_storage_snp_glue.pure.h"
 
 typedef sc_addr tstructure_snp;

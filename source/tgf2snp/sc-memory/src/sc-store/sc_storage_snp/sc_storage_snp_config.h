@@ -5,13 +5,13 @@
 #include <snp/snp.h>
 
 // device configuration
-const int g_iNumberOfPU     = 1024;
-const int g_iCellsPerPU     = 64 * 1024;
-const int g_iCellBitwidth   = 96;
+const int32 g_iNumberOfPU   = 1024;
+const int32 g_iCellsPerPU   = 4 * 1024;
+const int32 g_iCellBitwidth = 96;
 
 namespace sc_storage_snp {
 
-typedef snp::snpDevice<g_iCellBitwidth> Device;
+typedef snp::tmDevice<g_iCellBitwidth> tDevice;
 
 }
 

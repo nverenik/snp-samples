@@ -13,6 +13,11 @@
   <ItemGroup>
     <ClCompile Include="..\..\source\tgf2snp\sc-memory\src\sc-store\sc_storage_snp\sc_storage_snp_glue.pure.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\source\tgf2snp\sc-memory\src\sc-store\sc_storage_snp\sc_storage_snp_config.h" />
+    <ClInclude Include="..\..\source\tgf2snp\sc-memory\src\sc-store\sc_storage_snp\sc_storage_snp_glue.pure.h" />
+    <ClInclude Include="..\..\source\tgf2snp\sc-memory\src\sc-store\sc_storage_snp\sc_storage_snp_types.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{A9CFB64A-9A7F-4072-93B4-3B9709C1221F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -47,30 +52,34 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>ENABLE_HARDWARE_STORAGE;PURE_IMPLEMENTATION;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\external\snp-0.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Lib>
       <OutputFile>$(OutDir)scmemory.lib</OutputFile>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\external\snp-0.1.0\prebuilt\x86</AdditionalLibraryDirectories>
+      <AdditionalDependencies>snpmpicudad.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>ENABLE_HARDWARE_STORAGE;PURE_IMPLEMENTATION;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\external\snp-0.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Lib>
       <OutputFile>$(OutDir)scmemory.lib</OutputFile>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\external\snp-0.1.0\prebuilt\x86</AdditionalLibraryDirectories>
+      <AdditionalDependencies>snpmpicuda.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

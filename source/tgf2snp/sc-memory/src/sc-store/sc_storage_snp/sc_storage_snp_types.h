@@ -11,17 +11,17 @@ extern "C" {
 
 namespace sc_storage_snp {
 
-union VertexID
+union tVertexID
 {
     sc_addr m_asAddr;   // 32bit
     struct {
-        uint8 raw[4];
+        uint8 _raw[4];
     } m_asBitfield;     // 32bit
 };
 
-struct Vertex
+struct tVertex
 {
-    VertexID            m_ID;               // 32bit
+    tVertexID           m_ID;               // 32bit
     sc_access_levels    m_scAccessLevels;   // 8bit
     sc_type             m_scType;           // 16bit
     uint8               m_uLock;            // 8bit
@@ -31,18 +31,18 @@ struct Vertex
     uint16              m_uSearch;          // 16bit
 };
 
-struct Edge
+struct tEdge
 {
-    VertexID    m_ID1;              // 32bit
-    VertexID    m_ID2;              // 32bit
+    tVertexID   m_ID1;              // 32bit
+    tVertexID   m_ID2;              // 32bit
     uint8       m_uType     : 2;    // 2bit
     uint16      _reserved   : 14;   // 11bit
     uint16      m_uSearch;          // 16bit
 };
 
-struct Link
+struct tLink
 {
-    VertexID    m_ID;                   // 32bit
+    tVertexID   m_ID;                   // 32bit
     uint32      m_uChecksum;            // 32bit
     uint8       m_uType         : 2;    // 2bit
     uint8       m_uLinkIndex    : 3;    // 3bit
@@ -50,19 +50,20 @@ struct Link
     uint16      m_uSearch;              // 16bit
 };
 
-enum class CellType : uint8 {
-    EMPTY = 0,
-    VERTEX,
-    EDGE,
-    LINK
+enum tCellType
+{
+    tCellType_EMPTY     = 0x00,
+    tCellType_VERTEX    = 0x01,
+    tCellType_EDGE      = 0x02,
+    tCellType_LINK      = 0x03
 };
 
-union Cell
+union tCell
 {
-    Device::snpBitfield m_asBitfield;
-    Vertex              m_asVertex;
-    Edge                m_asEdge;
-    Link                m_asLink;
+    tDevice::tBitfield  m_asBitfield;
+    tVertex             m_asVertex;
+    tEdge               m_asEdge;
+    tLink               m_asLink;
 };
 
 }

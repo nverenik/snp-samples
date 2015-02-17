@@ -23,7 +23,7 @@ int main (unsigned int argc, char *  argv[]) {
 	TCHAR *  file;
 	if (argc < 2) {cout << help; return -1;}
 	else file = argv[1];
-	sc_access_levels access_levels;
+	sc_access_levels access_levels = 0;
 	translate_snp(file,access_levels);
 	return 0;
 }
