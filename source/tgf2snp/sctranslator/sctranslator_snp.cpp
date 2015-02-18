@@ -11,7 +11,9 @@ unsigned translate_snp(BYTE ** adj, METADATA metadata, sc_access_levels access_l
 	ttext t(adj,metadata);
 	tcode_snp c(t,access_levels);
 	tmap_snp m(t.size);
-	return sctranslate <	ttext&,	ttextselector,	telement, ttype, tidentifier, tcontent,
+
+    initialize_snp();
+    unsigned result = sctranslate <	ttext&,	ttextselector,	telement, ttype, tidentifier, tcontent,
 					tcode_snp&,	tstructure_snp, tmap_snp&, 
 					unsigned,
 					fedges,
@@ -33,6 +35,8 @@ unsigned translate_snp(BYTE ** adj, METADATA metadata, sc_access_levels access_l
 					fget_snp,
 					fmap_snp,
 					ffinalizer_snp>(t,c,m);
+    destroy_snp();
+    return result;
 };
 unsigned translate_snp(char *  file, sc_access_levels access_levels) {
  	BYTE ** adj;

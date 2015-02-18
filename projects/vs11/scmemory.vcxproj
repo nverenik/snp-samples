@@ -11,11 +11,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\source\tgf2snp\sc-memory\src\sc-store\sc_storage_snp\sc_storage_snp_glue.pure.cpp" />
+    <ClCompile Include="..\..\source\tgf2snp\sc-memory\src\sc-store\sc_storage_snp\sc_storage_snp_glue.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\source\tgf2snp\sc-memory\src\sc-store\sc_storage_snp\sc_storage_snp_config.h" />
-    <ClInclude Include="..\..\source\tgf2snp\sc-memory\src\sc-store\sc_storage_snp\sc_storage_snp_glue.pure.h" />
+    <ClInclude Include="..\..\source\tgf2snp\sc-memory\src\sc-store\sc_storage_snp\sc_storage_snp_glue.h" />
     <ClInclude Include="..\..\source\tgf2snp\sc-memory\src\sc-store\sc_storage_snp\sc_storage_snp_types.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

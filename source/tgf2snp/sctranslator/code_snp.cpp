@@ -29,6 +29,12 @@ sc_type encode(ttype t) {
 	return r;
 };
 
+void initialize_snp() {
+    snp_initialize(NULL, true);
+}
+void destroy_snp() {
+    snp_shutdown(false);
+}
 tstructure_snp fgen_snp(tcode_snp& c,telement e,ttype t) {
 	c.o = tcode_snp::GEN;
 	c.i = e;

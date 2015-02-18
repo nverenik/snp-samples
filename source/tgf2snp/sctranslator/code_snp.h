@@ -18,7 +18,7 @@
 #define PURE_IMPLEMENTATION
 #endif //PURE_IMPLEMENTATION
 
-#include "sc-memory/src/sc-store/sc_storage_snp/sc_storage_snp_glue.pure.h"
+#include "sc-memory/src/sc-store/sc_storage_snp/sc_storage_snp_glue.h"
 
 typedef sc_addr tstructure_snp;
 
@@ -60,6 +60,9 @@ struct tcode_snp {
 		paccess_levels = &a;
 	};
 };
+
+void initialize_snp();
+void destroy_snp();
 
 tstructure_snp fgen_snp(tcode_snp& c,telement e,ttype t);
 tstructure_snp fgen_beg_snp(tcode_snp& c,telement e,ttype t,tstructure_snp b);
