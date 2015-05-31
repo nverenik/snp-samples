@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tgf2snp", "tgf2snp.vcxproj"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "scmemory", "scmemory.vcxproj", "{A9CFB64A-9A7F-4072-93B4-3B9709C1221F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tgf2snp", "tgf2snp", "{94BDCC37-93A8-4E60-AB83-D5E621FD16BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -71,5 +73,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CDEDF3A1-05DA-4C3D-A30C-144B881B3FCA} = {94BDCC37-93A8-4E60-AB83-D5E621FD16BE}
+		{AE33CCC6-C32F-451D-B618-A34BBA092992} = {94BDCC37-93A8-4E60-AB83-D5E621FD16BE}
+		{5F3D9025-C4A1-4F7E-9A44-A080EDE5D85B} = {94BDCC37-93A8-4E60-AB83-D5E621FD16BE}
+		{A9CFB64A-9A7F-4072-93B4-3B9709C1221F} = {94BDCC37-93A8-4E60-AB83-D5E621FD16BE}
 	EndGlobalSection
 EndGlobal
