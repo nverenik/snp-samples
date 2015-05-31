@@ -1,4 +1,4 @@
-#include "Graph.h"
+#include "PFGraph.h"
 using namespace snp;
 
 #define SNP_BITFIELD_DATA_SET                   snpBitfieldSet

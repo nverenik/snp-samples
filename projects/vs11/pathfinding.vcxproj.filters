@@ -4,24 +4,396 @@
     <Filter Include="source">
       <UniqueIdentifier>{6e46c54b-7057-4f75-96a0-b473ad2e3746}</UniqueIdentifier>
     </Filter>
+    <Filter Include="external">
+      <UniqueIdentifier>{378310e9-98bf-4da9-912e-1b8bc80a0f93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\pigale">
+      <UniqueIdentifier>{fa73d5cb-2df4-4fce-b10f-e7373a70c166}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\pigale\incl">
+      <UniqueIdentifier>{7b16e6ac-82b9-4a74-8786-f43c0eb31564}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\pigale\tgraph">
+      <UniqueIdentifier>{e882a3ff-770e-4c70-8ecd-f4c8bcebde4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\pigale\incl\GL">
+      <UniqueIdentifier>{e9ec6aa3-c5b8-41ee-9241-bbf1aa52a7a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\pigale\incl\QT">
+      <UniqueIdentifier>{3663504a-9d04-406c-a006-1f87b752afdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\pigale\incl\TAXI">
+      <UniqueIdentifier>{899e1456-b5e2-4e0e-851e-613cf62f9499}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\source\pathfinding\Main.cpp">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\pathfinding\Graph.cpp">
+    <ClCompile Include="..\..\external\pigale\tgraph\3-ConOrientTriang.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\3-ConShelling1.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\3-ConShelling2.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\Barycenter.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\BFS.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\Biconnect.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\Bipolar.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\BipPlanarize.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\CotreeCritical.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\Debug.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\DFS.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\DFSGraph.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\DFSMap.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\Diagonalise.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\Embed2Pages.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\EmbedCCD.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\EmbedFPP.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\EmbedPolrec.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\EmbedPolyline.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\EmbedTutteCircle.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\EmbedVision.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\FastTwit.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\File.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\Generate.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\GeoAlgs.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\Graph.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\HeapSort.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\k-InfOrient.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\LR-Algo.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\LR-Map.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\mark.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\MaxPlanar.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\more.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\netcut.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\NewPolar.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\NpBiconnect.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\Planar.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\PropName.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\PropStd.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\PropTgf.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\PSet.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\random.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\reduce.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\SchaefferGen.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\Schnyder.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\SchnyderWood.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\STList.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\SWShelling.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\Tgf.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\TopoAlgs.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\Twit.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\VertexPacking.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\pigale\tgraph\Vision.cpp">
+      <Filter>external\pigale\tgraph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\pathfinding\PFGraph.cpp">
       <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\source\pathfinding\Graph.h">
-      <Filter>source</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\source\pathfinding\Types.h">
       <Filter>source</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
+    <ClInclude Include="..\..\external\pigale\incl\config.h">
+      <Filter>external\pigale\incl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\Pigale.h">
+      <Filter>external\pigale\incl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\GL\freeglut.h">
+      <Filter>external\pigale\incl\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\GL\freeglut_ext.h">
+      <Filter>external\pigale\incl\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\GL\freeglut_std.h">
+      <Filter>external\pigale\incl\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\QT\Action.h">
+      <Filter>external\pigale\incl\QT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\QT\Action_def.h">
+      <Filter>external\pigale\incl\QT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\QT\clientEvent.h">
+      <Filter>external\pigale\incl\QT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\QT\GLWindow.h">
+      <Filter>external\pigale\incl\QT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\QT\graphml.h">
+      <Filter>external\pigale\incl\QT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\QT\graphmlparser.h">
+      <Filter>external\pigale\incl\QT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\QT\GraphWidgetPrivate.h">
+      <Filter>external\pigale\incl\QT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\QT\grid.h">
+      <Filter>external\pigale\incl\QT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\QT\Handler.h">
+      <Filter>external\pigale\incl\QT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\QT\Misc.h">
+      <Filter>external\pigale\incl\QT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\QT\pigaleCanvas.h">
+      <Filter>external\pigale\incl\QT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\QT\pigalePaint.h">
+      <Filter>external\pigale\incl\QT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\QT\pigaleQcolors.h">
+      <Filter>external\pigale\incl\QT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\QT\pigaleWindow_doc.h">
+      <Filter>external\pigale\incl\QT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\QT\staticData.h">
+      <Filter>external\pigale\incl\QT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\QT\SymWindow.h">
+      <Filter>external\pigale\incl\QT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\bicon.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Channel.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\color.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\CotreeCritical.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\DFSGraph.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\DFSLow.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Dos.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\elmt.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\embed.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\embedrn.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Errors.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\graph.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\graphs.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\IntList.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\KantShel.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\lralgo.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\MaxPath.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\ndfs.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\netcut.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\nlralgo.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\propdef.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\proptypes.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\random.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\SchnyderWood.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\SchPack.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\smatrix.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\SWShelling.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tarray.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tbase.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tdebug.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tfile.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tflist.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tgdebug.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tgf.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tmessage.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tpoint.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tprop.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tpropio.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tproptgf.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tsmap.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tstack.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tstring.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tsvector.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Ttimer.h">
+      <Filter>external\pigale\incl\TAXI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\pathfinding\PFGraph.h">
+      <Filter>source</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

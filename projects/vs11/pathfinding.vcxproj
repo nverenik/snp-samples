@@ -19,15 +19,130 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\source\pathfinding\Graph.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\3-ConOrientTriang.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\3-ConShelling1.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\3-ConShelling2.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\Barycenter.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\BFS.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\Biconnect.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\Bipolar.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\BipPlanarize.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\CotreeCritical.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\Debug.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\DFS.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\DFSGraph.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\DFSMap.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\Diagonalise.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\Embed2Pages.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\EmbedCCD.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\EmbedFPP.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\EmbedPolrec.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\EmbedPolyline.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\EmbedTutteCircle.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\EmbedVision.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\FastTwit.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\File.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\Generate.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\GeoAlgs.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\Graph.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\HeapSort.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\k-InfOrient.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\LR-Algo.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\LR-Map.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\mark.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\MaxPlanar.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\more.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\netcut.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\NewPolar.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\NpBiconnect.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\Planar.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\PropName.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\PropStd.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\PropTgf.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\PSet.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\random.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\reduce.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\SchaefferGen.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\Schnyder.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\SchnyderWood.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\STList.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\SWShelling.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\Tgf.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\TopoAlgs.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\Twit.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\VertexPacking.cpp" />
+    <ClCompile Include="..\..\external\pigale\tgraph\Vision.cpp" />
+    <ClCompile Include="..\..\source\pathfinding\PFGraph.cpp" />
     <ClCompile Include="..\..\source\pathfinding\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\source\pathfinding\Graph.h" />
+    <ClInclude Include="..\..\external\pigale\incl\config.h" />
+    <ClInclude Include="..\..\external\pigale\incl\GL\freeglut.h" />
+    <ClInclude Include="..\..\external\pigale\incl\GL\freeglut_ext.h" />
+    <ClInclude Include="..\..\external\pigale\incl\GL\freeglut_std.h" />
+    <ClInclude Include="..\..\external\pigale\incl\Pigale.h" />
+    <ClInclude Include="..\..\external\pigale\incl\QT\Action.h" />
+    <ClInclude Include="..\..\external\pigale\incl\QT\Action_def.h" />
+    <ClInclude Include="..\..\external\pigale\incl\QT\clientEvent.h" />
+    <ClInclude Include="..\..\external\pigale\incl\QT\GLWindow.h" />
+    <ClInclude Include="..\..\external\pigale\incl\QT\graphml.h" />
+    <ClInclude Include="..\..\external\pigale\incl\QT\graphmlparser.h" />
+    <ClInclude Include="..\..\external\pigale\incl\QT\GraphWidgetPrivate.h" />
+    <ClInclude Include="..\..\external\pigale\incl\QT\grid.h" />
+    <ClInclude Include="..\..\external\pigale\incl\QT\Handler.h" />
+    <ClInclude Include="..\..\external\pigale\incl\QT\Misc.h" />
+    <ClInclude Include="..\..\external\pigale\incl\QT\pigaleCanvas.h" />
+    <ClInclude Include="..\..\external\pigale\incl\QT\pigalePaint.h" />
+    <ClInclude Include="..\..\external\pigale\incl\QT\pigaleQcolors.h" />
+    <ClInclude Include="..\..\external\pigale\incl\QT\pigaleWindow_doc.h" />
+    <ClInclude Include="..\..\external\pigale\incl\QT\staticData.h" />
+    <ClInclude Include="..\..\external\pigale\incl\QT\SymWindow.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\bicon.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Channel.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\color.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\CotreeCritical.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\DFSGraph.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\DFSLow.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Dos.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\elmt.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\embed.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\embedrn.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Errors.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\graph.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\graphs.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\IntList.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\KantShel.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\lralgo.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\MaxPath.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\ndfs.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\netcut.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\nlralgo.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\propdef.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\proptypes.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\random.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\SchnyderWood.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\SchPack.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\smatrix.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\SWShelling.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tarray.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tbase.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tdebug.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tfile.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tflist.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tgdebug.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tgf.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tmessage.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tpoint.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tprop.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tpropio.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tproptgf.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tsmap.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tstack.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tstring.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Tsvector.h" />
+    <ClInclude Include="..\..\external\pigale\incl\TAXI\Ttimer.h" />
+    <ClInclude Include="..\..\source\pathfinding\PFGraph.h" />
     <ClInclude Include="..\..\source\pathfinding\Types.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{01638C36-E5A8-4182-9C34-0C006008DC53}</ProjectGuid>
@@ -81,7 +196,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\external\snp-0.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\external\snp-0.1.0\include;$(ProjectDir)..\..\external\pigale\incl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -97,7 +212,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\external\snp-0.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\external\snp-0.1.0\include;$(ProjectDir)..\..\external\pigale\incl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -115,7 +230,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\external\snp-0.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\external\snp-0.1.0\include;$(ProjectDir)..\..\external\pigale\incl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -135,7 +250,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\external\snp-0.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\external\snp-0.1.0\include;$(ProjectDir)..\..\external\pigale\incl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
