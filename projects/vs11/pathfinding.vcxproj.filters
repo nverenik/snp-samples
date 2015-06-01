@@ -192,6 +192,9 @@
     <ClCompile Include="..\..\source\pathfinding\PFGraph.cpp">
       <Filter>source</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\source\pathfinding\PFSolver.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\source\pathfinding\Types.h">
@@ -393,6 +396,9 @@
       <Filter>external\pigale\incl\TAXI</Filter>
     </ClInclude>
     <ClInclude Include="..\..\source\pathfinding\PFGraph.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\pathfinding\PFSolver.h">
       <Filter>source</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,5 +1,5 @@
-#ifndef __GRAPH_H__
-#define __GRAPH_H__
+#ifndef __PF_GRAPH_H__
+#define __PF_GRAPH_H__
 
 /*
  ** CGraph class represents classic bipartite graph in which the path is searched.
@@ -9,18 +9,18 @@
  ** There're two basic data types:
  **
  ** 1. Vertex of graph (16bytes = 4uint = 128bits)
- ** +--------+---------+---------+------------+-----------+----------+------------+--------+
- ** |  Type  |   ID    |  prevID | uiPathCost | #reserved | bVisited | bNextFront | bFront |
- ** +--------+---------+---------+------------+-----------+----------+------------+--------+
- ** | 2 bits | 32 bits | 32 bits |  32 bits   |  27 bits  |  1 bit   |   1 bit    | 1 bit  |
- ** +--------+---------+---------+------------+-----------+----------+------------+--------+
+ ** +---------+---------+------------+-----------+----------+------------+--------+--------+
+ ** |   ID    |  prevID | uiPathCost | #reserved | bVisited | bNextFront | bFront |  Type  |
+ ** +---------+---------+------------+-----------+----------+------------+--------+--------+
+ ** | 32 bits | 32 bits |  32 bits   |  27 bits  |  1 bit   |   1 bit    | 1 bit  | 2 bits |
+ ** +---------+---------+------------+-----------+----------+------------+--------+--------+
  **
  ** 2. Oriented edge of graph (16bytes = 4uint = 128bits)
- ** +--------+---------+---------+------------+-------------------------------+------------+
- ** |  Type  |   ID1   |   ID2   | uiPathCost |          #reserved            | bConnected |
- ** +--------+---------+---------+------------+-------------------------------+------------+
- ** | 2 bits | 32 bits | 32 bits |  32 bits   |           29 bits             |   1 bit    |
- ** +--------+---------+---------+------------+-------------------------------+------------+
+ ** +---------+---------+------------+-------------------------------+------------+--------+
+ ** |   ID1   |   ID2   | uiPathCost |          #reserved            | bConnected |  Type  |
+ ** +---------+---------+------------+-------------------------------+------------+--------+
+ ** | 32 bits | 32 bits |  32 bits   |           29 bits             |   1 bit    | 2 bits |
+ ** +---------+---------+------------+-------------------------------+------------+--------+
  */ 
 
 #include <snp/snp.h>
@@ -40,9 +40,23 @@ public:
     virtual ~CGraph();
 
     // Initialization
-    bool ResetGraph(); // clear device memory
+    bool Clear(); // clear the whole device memory
     bool CreateVertex(uint32 uiID);
-    bool CreateEdge(uint32 uiID1, uint32 uiID2, uint32 uiPathCost);
+    bool CreateEdge(uint32 uiIDFrom, uint32 uiIDTo, uint32 uiPathCost);
+
+    // Path-finding specific interface
+    bool ResetGraph(); // reset all service information in the graph
+
+    // Working with vertices
+    bool SetMinPathCost(uint32 uiID, uint32 uiPrevID, uint32 uiPathCost);
+    bool SetWaveStartVertex(uint32 uiID);
+    bool ReadNextVertexFromWavefront(tVertex &roVertex);
+    bool ReadVertex(uint32 uiID, tVertex &roVertex);
+    bool MoveWavefront();
+
+    // Working with edges
+    bool FindAllOutputEdges(uint32 uiIDFrom);
+    bool ReadNextOutputEdge(tEdge &roEdge);
 
 private:
     union tCell
@@ -50,10 +64,11 @@ private:
         tBitfield   m_asBitfield;
         tVertex     m_asVertex;
         tEdge       m_asEdge;
+
+        tCell();
     };
 
     CGraph();
-
     bool Init(uint32 uiCellsPerPU, uint32 uiNumberOfPU);
 
     // Forbit parent direct interface
@@ -61,22 +76,6 @@ private:
     using snp::tmDevice<CELL_BITWIDTH>::End;
     using snp::tmDevice<CELL_BITWIDTH>::Exec;
     using snp::tmDevice<CELL_BITWIDTH>::Read;
-
-//
-//	// Graph generator support
-//	//bool IsArcExists(uint32 ID1, uint32 ID2);
-//
-//	
-//	// working with vertex table
-//	bool setMinDistance(uint32 ID, uint32 prevID, const snpPFDistance &distance);
-//	bool setWaveStartVertex(uint32 ID);
-//	bool readNextVertexFromWavefront(snpGraphVertex &output);
-//	bool readVertex(uint32 ID, snpGraphVertex &output);
-//	bool moveWavefront();
-//
-//	// working with arcs table
-//	bool findAllOutputArcs(uint32 ID1);
-//	bool readNextOutputArc(snpGraphArc &output);
 };
 
-#endif //__GRAPH_H__
+#endif //__PF_GRAPH_H__

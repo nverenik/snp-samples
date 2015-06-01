@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <Pigale.h>
 
 #include "PFGraph.h"
-#include <Pigale.h>
+#include "PFSolver.h"
 
 const uint32 s_uiMaxPathCost = 100;
 
@@ -36,13 +37,10 @@ int main(int argc, char* argv[])
     GeometricGraph oGeometricGraph(*pGraphContainer);
 
     // Store graph configuration into device memory
-    uint32 aaa = oGeometricGraph.nv();
-    uint32 bbb = oGeometricGraph.ne();
-
     const uint32 uiNumberOfCells = pow2roundup(oGeometricGraph.nv() + oGeometricGraph.ne());
     CGraph::SP pGraph = CGraph::Create(1, uiNumberOfCells); //fastest configuration - 1 thread per 1 cell
 
-    pGraph->ResetGraph();
+    pGraph->Clear();
     for (uint32 uiIndex = 1; uiIndex <= oGeometricGraph.nv(); uiIndex++)
         pGraph->CreateVertex(uiIndex);
 
@@ -56,5 +54,8 @@ int main(int argc, char* argv[])
         pGraph->CreateEdge(vlabel[vin[(tbrin)edge]()], vlabel[vin[(tbrin)-edge]()], rand() % s_uiMaxPathCost);
 	
 	delete pGraphContainer;
+
+    bool bResult = PFSolver::FindPath(pGraph.get(), 1, 100);
+
     return 0;
 }

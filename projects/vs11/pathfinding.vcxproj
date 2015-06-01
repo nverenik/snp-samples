@@ -74,6 +74,7 @@
     <ClCompile Include="..\..\external\pigale\tgraph\Vision.cpp" />
     <ClCompile Include="..\..\source\pathfinding\PFGraph.cpp" />
     <ClCompile Include="..\..\source\pathfinding\Main.cpp" />
+    <ClCompile Include="..\..\source\pathfinding\PFSolver.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\external\pigale\incl\config.h" />
@@ -142,6 +143,7 @@
     <ClInclude Include="..\..\external\pigale\incl\TAXI\Tsvector.h" />
     <ClInclude Include="..\..\external\pigale\incl\TAXI\Ttimer.h" />
     <ClInclude Include="..\..\source\pathfinding\PFGraph.h" />
+    <ClInclude Include="..\..\source\pathfinding\PFSolver.h" />
     <ClInclude Include="..\..\source\pathfinding\Types.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
